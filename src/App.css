@@ -1,0 +1,113 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+} 
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap'); /*Title Line font*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap'); /*Nav Bar Tab font*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap'); /*Home Intro font*/
+
+
+.nav-bar{
+  list-style: none;
+  display: flex;
+  width: 80vw;
+  position: auto;
+  z-index:10;
+}
+
+.Tab:hover{
+  color: #6e7fc9;
+}
+
+.each-tab{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1vw;
+  padding-right: 10vw;
+}
+
+/*Home Page Header*/
+.about-me-title{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 5vw;
+  color: white;
+  position: relative;
+  top: 0vw;
+  left:10vw;
+}
+
+.about-me-paragraph{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2vw;
+  color: white;
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  top: 10vh;
+}
+
+.profile-figure{
+  position: 'relative';
+  top: 1vh;
+  left: 1vw;
+  padding: 30px; 
+  width:30vw;
+  height:40vh;
+}
+
+
+/*image gallery container*/
+.pictures-content{
+  top: 30vh;
+}
+
+/*video gallery container*/
+.videos-content{
+  height:100vh; 
+  width: 100vw; 
+  display: block; 
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+}
+
+
+/*GuestBook*/
+.alert {
+  animation: autoHide 0s ease-in 4s forwards;
+}
+
+.movie-posters{
+    position:   relative; 
+    padding-top: 20px; 
+    padding-right:20px;
+    top: 1vh; 
+    left: 1vw; 
+    width:20vw; 
+    height:60vh;
+}
+
+.movie-posters:hover{
+  opacity: 0.5;
+}

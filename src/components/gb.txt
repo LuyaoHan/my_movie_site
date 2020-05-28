@@ -1,0 +1,47 @@
+import React, { useEffect, useState } from 'react'
+import '../App.css'
+import logo from '../logo.svg'
+import config from './config.js'
+
+const firebase = require('firebase')
+import ReactDOM from 'react-dom'
+
+function GuestBook(){
+    const [data,setData] = useState([])
+    const [shouldRender , setShouldRender] = useState(true)
+    const sample = ["hi","hello","how are you","test"]
+
+
+    useEffect(() => {
+        if(!firebase.apps.length){
+            firebase.initializeApp(config)
+        }
+
+        //get a reference to the database
+        let ref = firebase.database().ref('data')
+
+        //retrieve its data
+        
+        ref.on( 'value', snapshot => {
+            const state = snapshot.val()
+            setData(state)
+        })
+    }, [shouldRender])
+
+
+return(
+    <div className="GuestBook">
+            
+                {sample.map((s,index) => (
+                    <p>
+                        {s}
+                    </p>
+                ))}
+        
+    </div>
+)
+
+}
+
+
+export default GuestBook;
