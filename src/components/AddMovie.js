@@ -157,7 +157,8 @@ function AddMovie(){
                 console.log("recvPosterURL is: "+ recvPosterURL)
                 console.log("recvActors is: "+ recvActors)  
                 console.log("recvGenre is: "+ recvGenre)  
-                firebase.database().ref('AllLists').child('All').push(
+                
+                firebase.database().ref('AllLists').child('All').child(values.newMovieID).set(
                   {IMDbID: values.newMovieID,
                   Title: recvTitle,
                   PosterURL: recvPosterURL,
