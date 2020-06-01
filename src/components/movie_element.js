@@ -30,7 +30,7 @@ class Movie extends Component {
   componentDidMount() {
     axios
       .get(
-        `https://www.omdbapi.com/?apikey=cab6a2b3&i=${this.props.movieid}&plot=full`
+        `https://www.omdbapi.com/?apikey=16e23e6c&i=${this.props.movieid}&plot=full`
       )
       .then((res) => res.data)
       .then((res) => {

@@ -19,13 +19,16 @@
     "react-onclickoutside": "^6.9.0",
     "react-scripts": "3.4.1",
     "reactstrap": "^8.4.1",
-    "write-json-file": "^4.3.0"
+    "write-json-file": "^4.3.0",
+    "homepage": "https://github.com/LuyaoHan/my_movie_site"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -41,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.0.0"
   }
 }
